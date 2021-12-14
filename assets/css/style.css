@@ -1,0 +1,128 @@
+:root {
+    --background-color: #dadada;
+    --primary-color: #014266;
+    --secondary-color: #86bbec;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* HEADER */
+
+header {
+    padding: 20px 30px;
+    height: 200px;
+    display: flex;
+    /* background-color: var(--secondary-color); */
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image: url("../images/nightSky.jpeg");
+    background-size: cover;
+    background-position-y: 50%;
+}
+
+header h1 {
+    font-size: 36px;
+    font-weight: bold;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, .3);
+}
+
+header a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+
+header nav {
+    margin: 7px 0;
+    justify-content: right;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+}
+
+header nav ul a {
+    padding: 10px 15px;
+    font-weight: bold;
+    font-size: 1.5vw;
+}
+
+/* BODY */
+
+body {
+    background-color: var(--background-color);
+}
+
+/* JUMBOTRON */
+
+.portrait {
+    width: 100%;
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.portrait img {
+    width: 200px;
+    border-radius: 50%;
+}
+
+/* ABOUT ME */
+
+.section {
+    width: 80%;
+    margin: 5% auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+.section-title {
+    color: var(--primary-color);
+    font-size: 40px;
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 20px;
+    text-align: center;
+    margin: 0 auto 35px auto;
+    width: 100%;
+}
+
+.moreMe {
+    flex: 1 0 0;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    padding: 10px;
+    background-color: var(--secondary-color);
+}
+
+.moreMe h3 {
+    font-size: 25px;
+    margin: 10px;
+}
+
+.moreMe img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* CONTACT */
+
+address {
+    text-align: center;
+    font-size: 20px;
+    line-height: 2;
+}
