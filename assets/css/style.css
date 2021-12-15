@@ -79,7 +79,7 @@ body {
 .portrait img {
     width: 200px;
     border-radius: 50%;
-    border: 10px solid;
+    /* border: 10px solid; */
 }
 
 /* ABOUT ME */
@@ -88,6 +88,7 @@ body {
     width: 80%;
     margin: auto;
     display: flex;
+    /* border: 10px solid pink; */
 }
 
 
@@ -102,6 +103,7 @@ body {
 .moreMe {
     display: flex;
     flex-wrap: wrap;
+    /* border: 10px solid lime; */
 }
 
 .moreMeCard {
@@ -110,33 +112,94 @@ body {
     height: 400px;
     text-align: center;
     margin: 10px;
-    padding: 20px;
+    /* padding: 20px; */
     border-radius: 25px;
     flex-grow: 1;
+    /* border: 10px solid blue; */
+}
+
+.moreMeCard h3 {
+    color: var(--secondary-color);
+    font-size: 30px;
+    margin: 20px auto;
+    /* background-color: rgba(218, 240, 94, 0.3); */
+    width: 70%;
+    border-radius: 40%;
+}
+
+.moreMeCard p {
+    padding: 10px;
+    width: 70%;
+    margin: 20px auto;
+}
+
+.moreMeCard:hover h3 {
+    color: var(--primary-color);
+    background-color: rgba(139, 212, 238, 0.932);
+}
+
+.moreMeCard p {
+    padding: 30px;
 }
 
 .mmCard1 {
     background-image: url(../images/baltimore.jpeg);
-    filter: blur(8px);
+    background-size: cover;
+    background-position: center;
 }
 
 .mmCard2 {
     background-image: url(../images/wedding.jpeg);
+    background-size: cover;
+    background-position: center;
 }
 
 .mmCard3 {
     background-image: url(../images/pyramidView.jpeg);
+    background-size: cover;
+    background-position: center;
 }
 
-.moreMeCard h3 {
-    font-size: 25px;
-    margin: 10px;
-}
 
 /* CONTACT */
 
-address {
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    /* border: 10px solid black; */
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.addCard {
+    color: black;
+    text-decoration: none;
+    font-size: 30px;
+    height: 200px;
+    width: 40%;
+    border-radius: 30px;
+    margin: 20px;
     text-align: center;
-    font-size: 20px;
-    line-height: 2;
+}
+
+.place {
+    background-image: url(../images/world.jpeg);
+    background-size: cover;
+}
+
+.phone {
+    background-image: url(../images/phone.jpeg);
+    background-size: cover;
+}
+
+.email {
+    background-image: url(../images/email.jpeg);
+    background-size: cover;
+}
+
+.linkedIn {
+    background-image: url(../images/network.jpeg);
+    background-size: cover;
 }
