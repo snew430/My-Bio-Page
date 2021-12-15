@@ -55,6 +55,10 @@ header nav ul a {
     font-size: 1.5vw;
 }
 
+header nav ul a:hover{
+    color: var(--background-color);
+}
+
 /* BODY */
 
 body {
@@ -64,59 +68,69 @@ body {
 /* JUMBOTRON */
 
 .portrait {
-    width: 100%;
-    margin: 20px;
+    width: 80%;
+    margin: 20px auto 30px;
     padding: 20px;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
+    border-bottom: 2px solid var(--primary-color);
 }
 
 .portrait img {
     width: 200px;
     border-radius: 50%;
+    border: 10px solid;
 }
 
 /* ABOUT ME */
 
 .section {
     width: 80%;
-    margin: 5% auto;
+    margin: auto;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
 }
 
 
 .section-title {
     color: var(--primary-color);
     font-size: 40px;
-    border-bottom: 2px solid var(--primary-color);
-    padding-bottom: 20px;
-    text-align: center;
-    margin: 0 auto 35px auto;
-    width: 100%;
+    border-right: 2px solid var(--primary-color);
+    padding-right: 20px;
+    margin: 2%;
 }
 
 .moreMe {
-    flex: 1 0 0;
-    text-align: center;
     display: flex;
     flex-wrap: wrap;
-    margin: 10px;
-    padding: 10px;
-    background-color: var(--secondary-color);
 }
 
-.moreMe h3 {
+.moreMeCard {
+    color: var(--secondary-color);
+    width: 400px;
+    height: 400px;
+    text-align: center;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 25px;
+    flex-grow: 1;
+}
+
+.mmCard1 {
+    background-image: url(../images/baltimore.jpeg);
+    filter: blur(8px);
+}
+
+.mmCard2 {
+    background-image: url(../images/wedding.jpeg);
+}
+
+.mmCard3 {
+    background-image: url(../images/pyramidView.jpeg);
+}
+
+.moreMeCard h3 {
     font-size: 25px;
     margin: 10px;
-}
-
-.moreMe img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
 }
 
 /* CONTACT */
