@@ -16,7 +16,6 @@ header {
     padding: 20px 30px;
     height: 200px;
     display: flex;
-    /* background-color: var(--secondary-color); */
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
@@ -40,6 +39,7 @@ header a {
 header nav {
     margin: 7px 0;
     justify-content: right;
+    /* flex-direction: column; */
 }
 
 header nav ul {
@@ -79,7 +79,6 @@ body {
 .portrait img {
     width: 200px;
     border-radius: 50%;
-    /* border: 10px solid; */
 }
 
 /* ABOUT ME */
@@ -88,7 +87,6 @@ body {
     width: 80%;
     margin: auto;
     display: flex;
-    /* border: 10px solid pink; */
 }
 
 
@@ -103,7 +101,6 @@ body {
 .moreMe {
     display: flex;
     flex-wrap: wrap;
-    /* border: 10px solid lime; */
 }
 
 .moreMeCard {
@@ -112,35 +109,38 @@ body {
     height: 400px;
     text-align: center;
     margin: 10px;
-    /* padding: 20px; */
     border-radius: 25px;
     flex-grow: 1;
-    /* border: 10px solid blue; */
 }
 
 .moreMeCard h3 {
     color: var(--secondary-color);
     font-size: 30px;
     margin: 20px auto;
-    /* background-color: rgba(218, 240, 94, 0.3); */
     width: 70%;
     border-radius: 40%;
 }
 
 .moreMeCard p {
+    color: var(--primary-color);
     padding: 10px;
     width: 70%;
     margin: 20px auto;
+    background-color: rgba(255, 255, 255, .5);
+    border: 1px solid;
+    border-radius: 10px;
 }
 
 .moreMeCard:hover h3 {
-    color: var(--primary-color);
+    color: var(--primary-color);;
     background-color: rgba(139, 212, 238, 0.932);
+    text-decoration: underline var(--primary-color);
 }
 
 .moreMeCard p {
     padding: 30px;
 }
+
 
 .mmCard1 {
     background-image: url(../images/baltimore.jpeg);
@@ -160,6 +160,26 @@ body {
     background-position: center;
 }
 
+/* MY WORK */
+
+.mmCard4 {
+    background-image: url(../images/bryceCanyon.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.mmCard5 {
+    background-image: url(../images/greatWall.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.mmCard6 {
+    background-image: url(../images/machuPicchu.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
 
 /* CONTACT */
 
@@ -167,14 +187,13 @@ body {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    /* border: 10px solid black; */
     justify-content: flex-start;
     align-items: center;
-    flex-direction: column;
+    /* flex-direction: column; */
 }
 
 .addCard {
-    color: black;
+    color: var(--secondary-color);
     text-decoration: none;
     font-size: 30px;
     height: 200px;
@@ -202,4 +221,51 @@ body {
 .linkedIn {
     background-image: url(../images/network.jpeg);
     background-size: cover;
+}
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+
+}
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER*/
+@media screen and (max-width:768px) {
+
+header {
+    background-image:none;
+    background-color: var(--primary-color);
+    flex-direction: column;
+    align-items: center;
+}
+
+header h1 {
+    border-bottom: 3px solid var(--secondary-color);
+    width: 70%;
+    margin: 15px auto;
+    text-align: center;
+}
+
+header nav ul {
+    flex-direction: column;
+}
+
+header nav ul a {
+    font-size: 20px;
+}
+
+.section {
+    flex-direction: column;
+}
+
+.section-title {
+    border-right: none;
+    border-bottom: 2px solid;
+    text-align: center;
+}
+
+}
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+
 }
