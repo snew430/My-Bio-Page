@@ -1,5 +1,5 @@
 :root {
-    --background-color: #dadada;
+    --background-color: #d8cece;
     --primary-color: #014266;
     --secondary-color: #86bbec;
 }
@@ -8,6 +8,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 /* HEADER */
@@ -118,7 +119,7 @@ body {
     font-size: 30px;
     margin: 20px auto;
     width: 70%;
-    border-radius: 40%;
+    /* border-radius: 40%; */
 }
 
 .moreMeCard p {
@@ -134,7 +135,7 @@ body {
 
 .moreMeCard:hover h3 {
     color: var(--primary-color);;
-    background-color: rgba(139, 212, 238, 0.932);
+    /* background-color: rgba(153, 154, 155, 0.932); */
     text-decoration: underline var(--primary-color);
 }
 
@@ -178,14 +179,14 @@ body {
     background-image: url(../images/greatWall.jpeg);
     background-size: cover;
     background-position: center;
-    flex: 1 0 200px;
+    flex: 1 0 300px;
 }
 
 .mmCard6 {
     background-image: url(../images/machuPicchu.jpeg);
     background-size: cover;
     background-position: center;
-    flex: 1 0 200px;
+    flex: 1 0 300px;
 }
 
 
@@ -212,6 +213,10 @@ body {
     flex: 1 0 200px;
 }
 
+.addCard h3 {
+    background: rgba(255, 255, 255, 0.4);
+}
+
 .place {
     background-image: url(../images/world.jpeg);
     background-size: cover;
@@ -230,6 +235,7 @@ body {
 .linkedIn {
     background-image: url(../images/network.jpeg);
     background-size: cover;
+    color: var(--secondary-color);
 }
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
