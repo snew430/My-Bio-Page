@@ -1,7 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+
 :root {
     --background-color: #d8cece;
-    --primary-color: #2883b4;
-    --secondary-color: #c6caf3;
+    --primary-color: #A25800;
+    --secondary-color: #EEB152;
+    --font-style-header: 'Dela Gothic One';
+    --font-style-body:
 }
 
 * {
@@ -20,7 +24,7 @@ header {
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
-    background-image: url("../images/nightSky.jpeg");
+    background-image: url("../images/gold.jpeg");
     background-size: cover;
     background-position-y: 50%;
 }
@@ -33,7 +37,9 @@ header h1 {
 
 header a {
     text-decoration: none;
+    text-shadow: -1px -1px 0 var(--primary-color), 1px -1px 0 var(--primary-color), -1px 1px 0 var(--primary-color), 1px 1px 0 var(--primary-color);
     color: var(--secondary-color);
+    font-family: var(--font-style-header);
 }
 
 
@@ -67,30 +73,36 @@ body {
     display: grid;
     grid-template-rows: 1fr 50px;
     background: linear-gradient(to bottom, #eeeeee, #221d1f);
+    /* display: flex; */
 }
 
-/* JUMBOTRON */
+/* PORTRAIT/JUMBO */
 
 .portrait {
     width: 80%;
+    height: 200px;
     margin: 20px auto 30px;
     padding: 20px;
     display: flex;
     justify-content: center;
     border-bottom: 2px solid var(--primary-color);
+    border: 10px solid;
+    /* flex-shrink: 0; */
 }
 
 .portrait img {
     width: 200px;
+    height: auto;
     border-radius: 50%;
 }
 
-/* ABOUT ME */
+/* SECTION TITLES */
 
 .section {
     width: 80%;
-    margin: auto;
+    margin: 50px auto;
     display: flex;
+    border: 5px solid red;
 }
 
 
@@ -100,6 +112,7 @@ body {
     border-right: 2px solid var(--primary-color);
     padding-right: 20px;
     margin: 2%;
+    font-family: var(--font-style-header);
 }
 
 .section-title-2 {
@@ -108,7 +121,15 @@ body {
     border-right: 2px solid var(--secondary-color);
     padding-right: 20px;
     margin: 2%;
+    font-family: var(--font-style-header);
 }
+
+.section-title-1 h2, .section-title-2 h2{
+    font-family: var(--font-style-header);
+
+}
+
+/* SECTION CARDS */
 
 .moreMe {
     display: flex;
@@ -120,7 +141,7 @@ body {
     width: 400px;
     height: 400px;
     text-align: center;
-    margin: 10px;
+    margin: 30px;
     border-radius: 25px;
     flex-grow: 1;
 }
@@ -130,7 +151,7 @@ body {
     font-size: 30px;
     margin: 20px auto;
     width: 70%;
-    /* border-radius: 40%; */
+    font-family: var(--font-style-header);
 }
 
 .moreMeCard p {
@@ -138,7 +159,7 @@ body {
     padding: 10px;
     width: 40%;
     margin: 150px 0;
-    background-color: rgba(99, 168, 189, 0.8);
+    background-color: rgba(222, 231, 140, 0.8);
     border: 1px solid;
     display: none;
     /* border-radius: 10px; */
@@ -159,6 +180,8 @@ body {
 }
 
 
+/* ABOUT ME CARDS */
+
 .mmCard1 {
     background-image: url(../images/baltimore.jpeg);
     background-size: cover;
@@ -177,7 +200,7 @@ body {
     background-position: center;
 }
 
-/* MY WORK */
+/* MY WORK CARDS*/
 
 .mmCard4 {
     background-image: url(../images/run-buddy.jpeg);
@@ -187,14 +210,14 @@ body {
 }
 
 .mmCard5 {
-    background-image: url(../images/greatWall.jpeg);
+    background-image: url(../images/photo.jpeg);
     background-size: cover;
     background-position: center;
     /* flex: 1 0 300px; */
 }
 
 .mmCard6 {
-    background-image: url(../images/machuPicchu.jpeg);
+    background-image: url(../images/record.jpeg);
     background-size: cover;
     background-position: center;
     /* flex: 1 0 300px; */
@@ -246,7 +269,50 @@ body {
 .linkedIn {
     background-image: url(../images/network.jpeg);
     background-size: cover;
-    color: var(--secondary-color);
+}
+
+/* SECONDARY PAGES */
+
+.otherPages h3 {
+    margin: 20px;
+    padding: 20px;
+    font-size: 30px;
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+.otherPages {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.otherPages p {
+    font-size: 20px;
+    color: var(--primary-color);
+    margin: 0px 100px 40px;
+}
+
+.opImg {
+    display: flex;
+
+    width: 100%;
+    justify-content: center;
+}
+
+.otherPages img {
+    height: 500px;
+    width: auto;
+    border-radius: 10px;
+}
+
+.opLinks {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.opLinks a {
+    height: 200px;
 }
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
@@ -257,9 +323,10 @@ body {
 /* MEDIA QUERY FOR TABLETS AND SMALLER*/
 @media screen and (max-width:768px) {
 
+
 header {
     background-image:none;
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
     flex-direction: column;
     align-items: center;
 }
