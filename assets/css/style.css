@@ -1,7 +1,7 @@
 :root {
     --background-color: #d8cece;
-    --primary-color: #014266;
-    --secondary-color: #86bbec;
+    --primary-color: #2883b4;
+    --secondary-color: #c6caf3;
 }
 
 * {
@@ -63,7 +63,10 @@ header nav ul a:hover{
 /* BODY */
 
 body {
-    background-color: var(--background-color);
+    /* background-color: var(--background-color); */
+    display: grid;
+    grid-template-rows: 1fr 50px;
+    background: linear-gradient(to bottom, #eeeeee, #221d1f);
 }
 
 /* JUMBOTRON */
@@ -91,10 +94,18 @@ body {
 }
 
 
-.section-title {
+.section-title-1 {
     color: var(--primary-color);
     font-size: 40px;
     border-right: 2px solid var(--primary-color);
+    padding-right: 20px;
+    margin: 2%;
+}
+
+.section-title-2 {
+    color: var(--secondary-color);
+    font-size: 40px;
+    border-right: 2px solid var(--secondary-color);
     padding-right: 20px;
     margin: 2%;
 }
