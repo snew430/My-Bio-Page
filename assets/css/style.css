@@ -46,7 +46,6 @@ header a {
 header nav {
     margin: 7px 0;
     justify-content: right;
-    /* flex-direction: column; */
 }
 
 header nav ul {
@@ -69,11 +68,8 @@ header nav ul a:hover{
 /* BODY */
 
 body {
-    /* background-color: var(--background-color); */
-    display: grid;
     grid-template-rows: 1fr 50px;
     background: linear-gradient(to bottom, #eeeeee, #221d1f);
-    /* display: flex; */
 }
 
 /* PORTRAIT/JUMBO */
@@ -86,13 +82,10 @@ body {
     display: flex;
     justify-content: center;
     border-bottom: 2px solid var(--primary-color);
-    border: 10px solid;
-    /* flex-shrink: 0; */
 }
 
 .portrait img {
-    width: 200px;
-    height: auto;
+    width: auto;
     border-radius: 50%;
 }
 
@@ -102,7 +95,6 @@ body {
     width: 80%;
     margin: 50px auto;
     display: flex;
-    border: 5px solid red;
 }
 
 
@@ -138,8 +130,8 @@ body {
 
 .moreMeCard {
     color: var(--secondary-color);
-    width: 400px;
-    height: 400px;
+    width: 30vw;
+    height: 30vh;
     text-align: center;
     margin: 30px;
     border-radius: 25px;
@@ -148,26 +140,25 @@ body {
 
 .moreMeCard h3 {
     color: var(--secondary-color);
-    font-size: 30px;
+    font-size: 2vw;
     margin: 20px auto;
     width: 70%;
     font-family: var(--font-style-header);
 }
 
 .moreMeCard p {
+    font-size: 1vw;
     color: var(--primary-color);
     padding: 10px;
-    width: 40%;
-    margin: 150px 0;
+    width: 15vw;
+    margin: 7vh 0;
     background-color: rgba(222, 231, 140, 0.8);
     border: 1px solid;
     display: none;
-    /* border-radius: 10px; */
 }
 
 .moreMeCard:hover h3 {
     color: var(--primary-color);;
-    /* background-color: rgba(153, 154, 155, 0.932); */
     text-decoration: underline var(--primary-color);
 }
 
@@ -206,21 +197,19 @@ body {
     background-image: url(../images/run-buddy.jpeg);
     background-size: cover;
     background-position: center;
-    /* flex: 2 0 600px; */
+    height: 500px;
 }
 
 .mmCard5 {
     background-image: url(../images/photo.jpeg);
     background-size: cover;
     background-position: center;
-    /* flex: 1 0 300px; */
 }
 
 .mmCard6 {
     background-image: url(../images/record.jpeg);
     background-size: cover;
     background-position: center;
-    /* flex: 1 0 300px; */
 }
 
 
@@ -237,9 +226,8 @@ body {
 .addCard {
     color: var(--primary-color);
     text-decoration: none;
-    font-size: 30px;
-    height: 200px;
-    /* width: 50%; */
+    font-size: 1.5vw;
+    height: 30vh;
     border-radius: 30px;
     margin: 20px 20px;
     text-align: center;
@@ -273,18 +261,17 @@ body {
 
 /* SECONDARY PAGES */
 
+.otherPages {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .otherPages h3 {
     margin: 20px;
     padding: 20px;
     font-size: 30px;
     color: var(--primary-color);
     text-decoration: underline;
-}
-
-.otherPages {
-    display: flex;
-    flex-wrap: wrap;
-
 }
 
 .otherPages p {
@@ -295,14 +282,13 @@ body {
 
 .opImg {
     display: flex;
-
     width: 100%;
     justify-content: center;
 }
 
 .otherPages img {
-    height: 500px;
-    width: auto;
+    height: auto;
+    width: 30vw;
     border-radius: 10px;
 }
 
@@ -315,8 +301,41 @@ body {
     height: 200px;
 }
 
+/* Coming Soon Text */
+
+.comingSoon {
+    width: 100%;
+    text-align: center;
+    font-size: 10vw;
+    color: var(--primary-color);
+}
+
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
+    
+.addCard {
+    font-size: 2vw;
+}
+
+header nav ul a {
+    font-size: 2vw;
+}
+
+.section-title-1 {
+    font-size: 3vw;
+}
+
+.section-title-2 {
+    font-size: 3vw;
+}
+
+.moreMeCard h3 {
+    font-size: 3vw;
+}
+
+.moreMeCard p {
+    display: none;
+}
 
 }
 
@@ -329,11 +348,12 @@ header {
     background-color: var(--secondary-color);
     flex-direction: column;
     align-items: center;
+    height: auto;
 }
 
 header h1 {
     border-bottom: 3px solid var(--secondary-color);
-    width: 70%;
+    width: 100%;
     margin: 15px auto;
     text-align: center;
 }
@@ -345,17 +365,26 @@ header nav ul {
 header nav ul a {
     font-size: 20px;
     margin: auto 30px;
-    /* border: 5px solid; */
 }
 
 .section {
     flex-direction: column;
 }
 
-.section-title {
+.section-title-1 {
     border-right: none;
     border-bottom: 2px solid;
     text-align: center;
+}
+
+.section-title-2 {
+    border-right: none;
+    border-bottom: 2px solid;
+    text-align: center;
+}
+
+.mmCard4 {
+    width: 100%
 }
 
 }
@@ -371,6 +400,54 @@ header nav ul a {
     font-size: 15px;
 }
 
+.section-title-1 {
+    font-size: 8vw;
+}
 
+.section-title-2 {
+    font-size: 8vw;
+}
+
+.moreMeCard h3 {
+    font-size: 4vw;
+}
+
+.mmCard4 {
+    height: 400px;
+}
+
+.addCard {
+    font-size: 4vw;
+}
+
+
+.otherPages h3 {
+    margin: 20px auto;
+    padding: 10px;
+    font-size: 10vw;
+    text-decoration: none;
+    border-bottom: 2px solid;
+    text-align: center;
+}
+
+.otherPages p {
+    font-size: 20px;
+    margin: 0px 20px 40px 20px;
+}
+
+.otherPages img {
+    height: auto;
+    width: 50vw;
+    border-radius: 10px;
+}
+
+.opLinks .moreMeCard{
+width: 100%;
+height: 100px;
+}
+
+.opLinks a {
+    font-size: 4vw;
+}
 
 }
