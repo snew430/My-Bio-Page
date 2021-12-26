@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
 
+/* Made variables to major theme changes */
 :root {
     --background-color: #d8cece;
     --primary-color: #A25800;
@@ -15,7 +16,7 @@
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-/* HEADER */
+/* HEADER BEGINS */
 
 header {
     padding: 20px 30px;
@@ -65,14 +66,18 @@ header nav ul a:hover{
     color: var(--background-color);
 }
 
-/* BODY */
+/* HEADER ENDS */
+
+/* BODY BEGINS */
 
 body {
     grid-template-rows: 1fr 50px;
     background: linear-gradient(to bottom, #eeeeee, #221d1f);
 }
 
-/* PORTRAIT/JUMBO */
+/* BODY ENDS */
+
+/* PORTRAIT/JUMBO BEGINS */
 
 .portrait {
     width: 80%;
@@ -89,7 +94,11 @@ body {
     border-radius: 50%;
 }
 
-/* SECTION TITLES */
+/* PORTRAIT/JUMBO ENDS */
+
+/* SECTION BEGINS */
+
+/* Section title generic details */
 
 .section {
     width: 80%;
@@ -121,7 +130,7 @@ body {
 
 }
 
-/* SECTION CARDS */
+/* Section card generic details */
 
 .moreMe {
     display: flex;
@@ -171,7 +180,7 @@ body {
 }
 
 
-/* ABOUT ME CARDS */
+/* About me cards backgrounds */
 
 .mmCard1 {
     background-image: url(../images/baltimore.jpeg);
@@ -191,7 +200,7 @@ body {
     background-position: center;
 }
 
-/* MY WORK CARDS*/
+/* My work cards backgrounds */
 
 .mmCard4 {
     background-image: url(../images/run-buddy.jpeg);
@@ -212,8 +221,9 @@ body {
     background-position: center;
 }
 
+/* SECTION ENDS */
 
-/* CONTACT */
+/* CONTACT BEGINS */
 
 .contact {
     display: flex;
@@ -258,6 +268,8 @@ body {
     background-image: url(../images/network.jpeg);
     background-size: cover;
 }
+
+/* CONTACT ENDS */
 
 /* SECONDARY PAGES */
 
@@ -312,6 +324,8 @@ body {
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
+
+/* All font sizes change when screen hits 980px */
     
 .addCard {
     font-size: 2vw;
@@ -333,6 +347,7 @@ header nav ul a {
     font-size: 3vw;
 }
 
+/* No more paragraph elements */
 .moreMeCard p {
     display: none;
 }
@@ -342,7 +357,7 @@ header nav ul a {
 /* MEDIA QUERY FOR TABLETS AND SMALLER*/
 @media screen and (max-width:768px) {
 
-
+/* Major header changes when screen hits 768 px */
 header {
     background-image:none;
     background-color: var(--secondary-color);
@@ -366,6 +381,8 @@ header nav ul a {
     font-size: 20px;
     margin: auto 30px;
 }
+
+/* Sections start to go verticle */
 
 .section {
     flex-direction: column;
@@ -391,6 +408,8 @@ header nav ul a {
 
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
 @media screen and (max-width: 575px) {
+
+/* Font sizes change when screen size is 575px or smaller */
 
 header h1 {
     font-size: 25px;
