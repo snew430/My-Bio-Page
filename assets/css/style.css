@@ -1,69 +1,70 @@
-@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap");
 
 /* Made variables to major theme changes */
 :root {
-    --background-color: #d8cece;
-    --primary-color: #A25800;
-    --secondary-color: #EEB152;
-    --font-style-header: 'Dela Gothic One';
-    --font-style-body:
+  --background-color: #d8cece;
+  --primary-color: #a25800;
+  --secondary-color: #eeb152;
+  --font-style-header: "Dela Gothic One";
+  --font-style-body: ;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 /* HEADER BEGINS */
 
 header {
-    padding: 20px 30px;
-    height: 200px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: center;
-    background-image: url("../images/gold.jpeg");
-    background-size: cover;
-    background-position-y: 50%;
+  padding: 20px 30px;
+  height: 200px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  background-image: url("../images/gold.jpeg");
+  background-size: cover;
+  background-position-y: 50%;
 }
 
 header h1 {
-    font-size: 36px;
-    font-weight: bold;
-    text-shadow: 5px 5px 10px rgba(0, 0, 0, .3);
+  font-size: 36px;
+  font-weight: bold;
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 header a {
-    text-decoration: none;
-    text-shadow: -1px -1px 0 var(--primary-color), 1px -1px 0 var(--primary-color), -1px 1px 0 var(--primary-color), 1px 1px 0 var(--primary-color);
-    color: var(--secondary-color);
-    font-family: var(--font-style-header);
+  text-decoration: none;
+  text-shadow: -1px -1px 0 var(--primary-color), 1px -1px 0 var(--primary-color),
+    -1px 1px 0 var(--primary-color), 1px 1px 0 var(--primary-color);
+  color: var(--secondary-color);
+  font-family: var(--font-style-header);
 }
 
-
 header nav {
-    margin: 7px 0;
-    justify-content: right;
+  margin: 7px 0;
+  justify-content: right;
 }
 
 header nav ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
 }
 
 header nav ul a {
-    padding: 10px 15px;
-    font-weight: bold;
-    font-size: 1.5vw;
+  padding: 10px 15px;
+  font-weight: bold;
+  font-size: 1.5vw;
 }
 
-header nav ul a:hover{
-    color: var(--background-color);
+header nav ul a:hover {
+  color: var(--background-color);
 }
 
 /* HEADER ENDS */
@@ -71,8 +72,8 @@ header nav ul a:hover{
 /* BODY BEGINS */
 
 body {
-    grid-template-rows: 1fr 50px;
-    background: linear-gradient(to bottom, #eeeeee, #221d1f);
+  grid-template-rows: 1fr 50px;
+  background: linear-gradient(to bottom, #eeeeee, #221d1f);
 }
 
 /* BODY ENDS */
@@ -80,18 +81,18 @@ body {
 /* PORTRAIT/JUMBO BEGINS */
 
 .portrait {
-    width: 80%;
-    height: 200px;
-    margin: 20px auto 30px;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    border-bottom: 2px solid var(--primary-color);
+  width: 80%;
+  height: 200px;
+  margin: 20px auto 30px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  border-bottom: 2px solid var(--primary-color);
 }
 
 .portrait img {
-    width: auto;
-    border-radius: 50%;
+  width: auto;
+  border-radius: 50%;
 }
 
 /* PORTRAIT/JUMBO ENDS */
@@ -101,130 +102,128 @@ body {
 /* Section title generic details */
 
 .section {
-    width: 80%;
-    margin: 50px auto;
-    display: flex;
+  width: 80%;
+  margin: 50px auto;
+  display: flex;
 }
 
-
 .section-title-1 {
-    color: var(--primary-color);
-    font-size: 40px;
-    border-right: 2px solid var(--primary-color);
-    padding-right: 20px;
-    margin: 2%;
-    font-family: var(--font-style-header);
+  color: var(--primary-color);
+  font-size: 40px;
+  border-right: 2px solid var(--primary-color);
+  padding-right: 20px;
+  margin: 2%;
+  font-family: var(--font-style-header);
 }
 
 .section-title-2 {
-    color: var(--secondary-color);
-    font-size: 40px;
-    border-right: 2px solid var(--secondary-color);
-    padding-right: 20px;
-    margin: 2%;
-    font-family: var(--font-style-header);
+  color: var(--secondary-color);
+  font-size: 40px;
+  border-right: 2px solid var(--secondary-color);
+  padding-right: 20px;
+  margin: 2%;
+  font-family: var(--font-style-header);
 }
 
-.section-title-1 h2, .section-title-2 h2{
-    font-family: var(--font-style-header);
-
+.section-title-1 h2,
+.section-title-2 h2 {
+  font-family: var(--font-style-header);
 }
 
 /* Section card generic details */
 
 .moreMe {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .moreMeCard {
-    color: var(--secondary-color);
-    width: 30vw;
-    height: 30vh;
-    text-align: center;
-    margin: 30px;
-    border-radius: 25px;
-    flex-grow: 1;
+  color: var(--secondary-color);
+  width: 30vw;
+  height: 30vh;
+  text-align: center;
+  margin: 30px;
+  border-radius: 25px;
+  flex-grow: 1;
 }
 
 .moreMeCard h3 {
-    color: var(--secondary-color);
-    font-size: 2vw;
-    margin: 20px auto;
-    width: 70%;
-    font-family: var(--font-style-header);
+  color: var(--secondary-color);
+  font-size: 2vw;
+  margin: 20px auto;
+  width: 70%;
+  font-family: var(--font-style-header);
 }
 
 .moreMeCard p {
-    font-size: 1vw;
-    color: var(--primary-color);
-    padding: 10px;
-    width: 15vw;
-    margin: 7vh 0;
-    background-color: rgba(222, 231, 140, 0.8);
-    border: 1px solid;
-    display: none;
+  font-size: 1vw;
+  color: var(--primary-color);
+  padding: 10px;
+  width: 15vw;
+  margin: 7vh 0;
+  background-color: rgba(222, 231, 140, 0.8);
+  border: 1px solid;
+  display: none;
 }
 
 .moreMeCard:hover h3 {
-    color: var(--primary-color);;
-    text-decoration: underline var(--primary-color);
+  color: var(--primary-color);
+  text-decoration: underline var(--primary-color);
 }
 
 .moreMeCard:hover p {
-    display: block;
+  display: block;
 }
 
 .moreMeCard p {
-    padding: 30px;
+  padding: 30px;
 }
-
 
 /* About me cards backgrounds */
 
 .mmCard1 {
-    background-image: url(../images/baltimore.jpeg);
-    background-size: cover;
-    background-position: center;
+  background-image: url(../images/baltimore.jpeg);
+  background-size: cover;
+  background-position: center;
 }
 
 .mmCard2 {
-    background-image: url(../images/wedding.jpeg);
-    background-size: cover;
-    background-position: center;
+  background-image: url(../images/wedding.jpeg);
+  background-size: cover;
+  background-position: center;
 }
 
 .mmCard3 {
-    background-image: url(../images/pyramidView.jpeg);
-    background-size: cover;
-    background-position: center;
+  background-image: url(../images/pyramidView.jpeg);
+  background-size: cover;
+  background-position: center;
 }
 
 /* My work cards backgrounds */
 
 .mmCard4 {
-    background-image: url(../images/run-buddy.jpeg);
-    background-size: cover;
-    background-position: center;
-    height: 500px;
+  background-image: url(../images/run-buddy.jpeg);
+  background-size: cover;
+  background-position: center;
 }
 
 .mmCard5 {
-    background-image: url(../images/photo.jpeg);
-    background-size: cover;
-    background-position: center;
+  background-image: url(../images/photo.jpeg);
+  background-size: cover;
+  background-position: center;
 }
 
 .mmCard6 {
-    background-image: url(../images/record.jpeg);
-    background-size: cover;
-    background-position: center;
+  background-image: url(../images/record.jpeg);
+  background-size: cover;
+  background-position: center;
 }
 
 .mmCard7 {
-    background-image: url(../images/watchsocial.png);
-    background-size: cover;
-    background-position: center;
+  background-image: url(../images/watchsocial.png);
+  background-size: cover;
+  background-position: center;
+  height: 500px;
 }
 
 /* SECTION ENDS */
@@ -232,47 +231,47 @@ body {
 /* CONTACT BEGINS */
 
 .contact {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    justify-content: space-around;
-    align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .addCard {
-    color: var(--primary-color);
-    text-decoration: none;
-    font-size: 1.5vw;
-    height: 30vh;
-    border-radius: 30px;
-    margin: 20px 20px;
-    text-align: center;
-    padding: 30px;
-    flex: 1 0 200px;
+  color: var(--primary-color);
+  text-decoration: none;
+  font-size: 1.5vw;
+  height: 30vh;
+  border-radius: 30px;
+  margin: 20px 20px;
+  text-align: center;
+  padding: 30px;
+  flex: 1 0 200px;
 }
 
 .addCard h3 {
-    background: rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.4);
 }
 
 .place {
-    background-image: url(../images/world.jpeg);
-    background-size: cover;
+  background-image: url(../images/world.jpeg);
+  background-size: cover;
 }
 
 .phone {
-    background-image: url(../images/phone.jpeg);
-    background-size: cover;
+  background-image: url(../images/phone.jpeg);
+  background-size: cover;
 }
 
 .email {
-    background-image: url(../images/email.jpeg);
-    background-size: cover;
+  background-image: url(../images/email.jpeg);
+  background-size: cover;
 }
 
 .linkedIn {
-    background-image: url(../images/network.jpeg);
-    background-size: cover;
+  background-image: url(../images/network.jpeg);
+  background-size: cover;
 }
 
 /* CONTACT ENDS */
@@ -280,199 +279,192 @@ body {
 /* SECONDARY PAGES */
 
 .otherPages {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .otherPages h3 {
-    margin: 20px;
-    padding: 20px;
-    font-size: 30px;
-    color: var(--primary-color);
-    text-decoration: underline;
+  margin: 20px;
+  padding: 20px;
+  font-size: 30px;
+  color: var(--primary-color);
+  text-decoration: underline;
 }
 
 .otherPages p {
-    font-size: 20px;
-    color: var(--primary-color);
-    margin: 0px 100px 40px;
+  font-size: 20px;
+  color: var(--primary-color);
+  margin: 0px 100px 40px;
 }
 
 .opImg {
-    display: flex;
-    width: 100%;
-    justify-content: center;
+  display: flex;
+  width: 100%;
+  justify-content: center;
 }
 
 .otherPages img {
-    height: auto;
-    width: 30vw;
-    border-radius: 10px;
+  height: auto;
+  width: 30vw;
+  border-radius: 10px;
 }
 
 .opLinks {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .opLinks a {
-    height: 200px;
+  height: 200px;
 }
 
 /* Coming Soon Text */
 
 .comingSoon {
-    width: 100%;
-    text-align: center;
-    font-size: 10vw;
-    color: var(--primary-color);
+  width: 100%;
+  text-align: center;
+  font-size: 10vw;
+  color: var(--primary-color);
 }
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
+  /* All font sizes change when screen hits 980px */
 
-/* All font sizes change when screen hits 980px */
-    
-.addCard {
+  .addCard {
     font-size: 2vw;
-}
+  }
 
-header nav ul a {
+  header nav ul a {
     font-size: 2vw;
-}
+  }
 
-.section-title-1 {
+  .section-title-1 {
     font-size: 3vw;
-}
+  }
 
-.section-title-2 {
+  .section-title-2 {
     font-size: 3vw;
-}
+  }
 
-.moreMeCard h3 {
+  .moreMeCard h3 {
     font-size: 3vw;
-}
+  }
 
-/* No more paragraph elements */
-.moreMeCard p {
+  /* No more paragraph elements */
+  .moreMeCard p {
     display: none;
-}
-
+  }
 }
 
 /* MEDIA QUERY FOR TABLETS AND SMALLER*/
-@media screen and (max-width:768px) {
-
-/* Major header changes when screen hits 768 px */
-header {
-    background-image:none;
+@media screen and (max-width: 768px) {
+  /* Major header changes when screen hits 768 px */
+  header {
+    background-image: none;
     background-color: var(--secondary-color);
     flex-direction: column;
     align-items: center;
     height: auto;
-}
+  }
 
-header h1 {
+  header h1 {
     border-bottom: 3px solid var(--secondary-color);
     width: 100%;
     margin: 15px auto;
     text-align: center;
-}
+  }
 
-header nav ul {
+  header nav ul {
     flex-direction: column;
-}
+  }
 
-header nav ul a {
+  header nav ul a {
     font-size: 20px;
     margin: auto 30px;
-}
+  }
 
-/* Sections start to go verticle */
+  /* Sections start to go verticle */
 
-.section {
+  .section {
     flex-direction: column;
-}
+  }
 
-.section-title-1 {
+  .section-title-1 {
     border-right: none;
     border-bottom: 2px solid;
     text-align: center;
-}
+  }
 
-.section-title-2 {
+  .section-title-2 {
     border-right: none;
     border-bottom: 2px solid;
     text-align: center;
-}
+  }
 
-.mmCard4 {
-    width: 100%
-}
-
+  .mmCard4 {
+    width: 100%;
+  }
 }
 
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
 @media screen and (max-width: 575px) {
+  /* Font sizes change when screen size is 575px or smaller */
 
-/* Font sizes change when screen size is 575px or smaller */
-
-header h1 {
+  header h1 {
     font-size: 25px;
-}
+  }
 
-header nav ul a {
+  header nav ul a {
     font-size: 15px;
-}
+  }
 
-.section-title-1 {
+  .section-title-1 {
     font-size: 8vw;
-}
+  }
 
-.section-title-2 {
+  .section-title-2 {
     font-size: 8vw;
-}
+  }
 
-.moreMeCard h3 {
+  .moreMeCard h3 {
     font-size: 4vw;
-}
+  }
 
-.mmCard4 {
+  .mmCard4 {
     height: 400px;
-}
+  }
 
-.addCard {
+  .addCard {
     font-size: 4vw;
-}
+  }
 
-
-.otherPages h3 {
+  .otherPages h3 {
     margin: 20px auto;
     padding: 10px;
     font-size: 10vw;
     text-decoration: none;
     border-bottom: 2px solid;
     text-align: center;
-}
+  }
 
-.otherPages p {
+  .otherPages p {
     font-size: 20px;
     margin: 0px 20px 40px 20px;
-}
+  }
 
-.otherPages img {
+  .otherPages img {
     height: auto;
     width: 50vw;
     border-radius: 10px;
-}
+  }
 
-.opLinks .moreMeCard{
-width: 100%;
-height: 100px;
-}
+  .opLinks .moreMeCard {
+    width: 100%;
+    height: 100px;
+  }
 
-.opLinks a {
+  .opLinks a {
     font-size: 4vw;
-}
-
+  }
 }
