@@ -221,6 +221,12 @@ body {
     background-position: center;
 }
 
+.mmCard7 {
+    background-image: url(../images/watchsocial.png);
+    background-size: cover;
+    background-position: center;
+}
+
 /* SECTION ENDS */
 
 /* CONTACT BEGINS */
